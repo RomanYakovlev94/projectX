@@ -1,18 +1,16 @@
-body{
-    color: aqua;
-}
-h1{
-    font-size: 30px;
-    color: blueviolet;
-    font-weight: 400;
+//=== Mixins ===
+
+//=== Mixins ===
+
+
+//=== Variables ===
+
+//=== Variables ===
+
+.wrapper{
+    max-width: 1170px;
 }
 
-p{
-    box-sizing: border-box;
-}
-.command{
-    color: bisque;
-}
-.container{
-    max-width: max-content;
+.sp-color{
+    color: #FF8126;
 }

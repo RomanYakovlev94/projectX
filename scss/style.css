@@ -1,9 +1,8 @@
-body {
-  color: aqua;
+.wrapper {
+  max-width: 1170px;
 }
 
-p {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+.sp-color {
+  color: #FF8126;
 }
 /*# sourceMappingURL=style.css.map */
