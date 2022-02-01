@@ -11,6 +11,17 @@
   color: #656565;
 }
 
+.green-shit {
+  background-color: #c2e8ce;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px;
+}
+
 .lasted-of {
   max-width: 1280px;
   max-height: 412px;
