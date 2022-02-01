@@ -12,6 +12,7 @@ $width-max: 1280px;
 //=== Classes for different===
 .wrapper{
     max-width: 1170px;
+    margin: 0 auto;
 
 }
 
@@ -33,6 +34,50 @@ display: flex;
 justify-content: center;
 padding: 15px;
 }
+.header{
+    background: white;
+    &-wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+    }
+
+}
+.main-nav{
+    color: #656565;
+    &-ul{
+        display: flex;
+        list-style-type: none;
+        gap: 70px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        color: #1F1F1F;
+    }
+}
+.cart{
+    display: flex;
+    gap: 20px;
+    &-img{
+        border: 1px solid rgba(191, 191, 191, 1);
+        border-radius: 50%;
+        padding: 20px;
+    }
+}
+.filter-categories{
+    
+    // color: transparent;
+    &-list{
+        list-style-type: none;
+        position: absolute;
+        cursor: pointer;
+        &-item{
+           
+        }
+    }
+}
+
 //=== Header ===
 
 
