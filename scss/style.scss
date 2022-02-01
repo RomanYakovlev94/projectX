@@ -5,16 +5,23 @@
 
 //=== Variables ===
 $color-span: #FF8126;
+$width-max: 1280px;
 //=== Variables ===
 
 
 //=== Classes for different===
 .wrapper{
     max-width: 1170px;
+
 }
 
 .sp-color{
     color: $color-span;
+}
+
+.sp-color-d{
+    text-decoration: line-through;
+    color: #656565;
 }
 //=== Classes for different===
 
@@ -30,5 +37,89 @@ $color-span: #FF8126;
 
 
 //=== Lasted-of ===
+.lasted-of{
+    max-width: $width-max;
+    max-height: 412px;
+    margin: 80px 0 80px 0;
+    margin: 0 auto;
+}
 
+.lasted-of__items{
+    
+}
+.lasted-of__text{
+    width: 206px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    width: 100%;
+}
+.lasted-of__wr{
+    display: flex;
+    text-align: center;
+}
+.lasted-of__item{
+    width: 270px;
+    height: 332px;
+    background-color: #F7F5F0;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
+
+.lasted-of__heading{
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 27px;
+    text-align: center;
+}
+
+.lasted-of__price{
+    text-align: center;
+}
+
+.lasted-off__btn__add{
+    background-color: #FF8126;
+    color: #F7F5F0;
+    width: 230px;
+    height: 40px;
+    border-radius: 3px;
+    border: cornflowerblue;
+    text-transform: uppercase;
+    //margin-left: 20px;
+    //margin-bottom: 20px;
+}
 //=== Lasted-of ===
+
+
+//=== Why-us ===
+
+//=== Why-us ===
+
+
+//=== Who-makes ===
+
+//=== Who-makes ===
+
+
+//=== Surprice-exotic ===
+
+//=== Surprice-exotic ===
+
+
+//=== Slider-photos ===
+
+//=== Slider-photos ===
+
+
+//=== We-in-social ===
+
+//=== We-in-social ===
+
+
+//=== Footer ===
+
+//=== Footer ===
