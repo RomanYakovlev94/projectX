@@ -1,5 +1,6 @@
 .wrapper {
   max-width: 1170px;
+  margin: 0 auto;
 }
 
 .sp-color {
@@ -9,6 +10,69 @@
 .sp-color-d {
   text-decoration: line-through;
   color: #656565;
+}
+
+.green-shit {
+  background-color: #c2e8ce;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px;
+}
+
+.header {
+  background: white;
+}
+
+.header-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px;
+}
+
+.main-nav {
+  color: #656565;
+}
+
+.main-nav-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  gap: 70px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #1F1F1F;
+}
+
+.cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.cart-img {
+  border: 1px solid #bfbfbf;
+  border-radius: 50%;
+  padding: 20px;
+}
+
+.filter-categories-list {
+  list-style-type: none;
+  position: absolute;
+  cursor: pointer;
 }
 
 .lasted-of {
