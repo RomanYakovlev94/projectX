@@ -1,3 +1,4 @@
+
 //=== Mixins ===
 
 //=== Mixins ===
@@ -14,3 +15,13 @@ $color-span: #FF8126;
 .sp-color{
     color: $color-span;
 }
+
+body{
+    color: aqua;
+}
+h1{
+    font-size: 30px;
+    color: blueviolet;
+    font-weight: 400;
+}
+

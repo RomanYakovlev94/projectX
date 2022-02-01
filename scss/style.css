@@ -5,4 +5,14 @@
 .sp-color {
   color: #FF8126;
 }
+
+body {
+  color: aqua;
+}
+
+h1 {
+  font-size: 30px;
+  color: blueviolet;
+  font-weight: 400;
+}
 /*# sourceMappingURL=style.css.map */
