@@ -1,1 +1,14 @@
+<<<<<<< Updated upstream
 /* No CSS *//*# sourceMappingURL=style.css.map */
+=======
+body {
+  color: aqua;
+}
+
+h1 {
+  font-size: 30px;
+  color: blueviolet;
+  font-weight: 400;
+}
+/*# sourceMappingURL=style.css.map */
+>>>>>>> Stashed changes
