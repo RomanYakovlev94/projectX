@@ -28,7 +28,6 @@ $width-max: 1280px;
 
 //=== Header ===
 .green-shit{
-background-color:rgba(194, 232, 206, 1);
 display: flex;
 justify-content: center;
 padding: 15px;
@@ -92,7 +91,6 @@ padding: 15px;
     width: 230px;
     height: 40px;
     border-radius: 3px;
-    border: cornflowerblue;
     text-transform: uppercase;
     //margin-left: 20px;
     //margin-bottom: 20px;
@@ -128,3 +126,9 @@ padding: 15px;
 //=== Footer ===
 
 //=== Footer ===
+
+p{
+    box-sizing: border-box;
+}
+
+
