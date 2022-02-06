@@ -12,6 +12,7 @@ $width-max: 1280px;
 //=== Classes for different===
 .wrapper{
     max-width: 1170px;
+    margin: 0 auto;
 
 }
 
@@ -31,7 +32,61 @@ $width-max: 1280px;
 display: flex;
 justify-content: center;
 padding: 15px;
+background: #C2E8CE;
+&_text{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #1F1F1F;
+
 }
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+
+    }
+.header-mainnav-list{
+    display: flex;
+    gap: 70px;
+    list-style-type: none;
+    &_item{
+        &__link{
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 22px;
+            color: #1F1F1F;
+        }
+
+    }
+   
+} 
+
+
+    .header-navgroup{
+        display: flex;
+        gap: 25px;
+    }
+   .header-nav{
+    display: flex;
+    align-self: center;   
+    background: #FFFFFF;
+    border-radius: 50px;
+    border: 1px solid #BFBFBF;
+    padding: 25px;
+}
+    
+
+  
+
+
+ 
+
+
 //=== Header ===
 
 

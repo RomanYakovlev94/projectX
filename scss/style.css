@@ -1,5 +1,6 @@
 .wrapper {
   max-width: 1170px;
+  margin: 0 auto;
 }
 
 .sp-color {
@@ -12,7 +13,6 @@
 }
 
 .green-shit {
-  background-color: #c2e8ce;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -20,6 +20,63 @@
       -ms-flex-pack: center;
           justify-content: center;
   padding: 15px;
+  background: #C2E8CE;
+}
+
+.green-shit_text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: #1F1F1F;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0;
+}
+
+.header-mainnav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 70px;
+  list-style-type: none;
+}
+
+.header-mainnav-list_item__link {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #1F1F1F;
+}
+
+.header-navgroup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 25px;
+}
+
+.header-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  background: #FFFFFF;
+  border-radius: 50px;
+  border: 1px solid #BFBFBF;
+  padding: 25px;
 }
 
 .lasted-of {
@@ -78,7 +135,11 @@
   width: 230px;
   height: 40px;
   border-radius: 3px;
-  border: cornflowerblue;
   text-transform: uppercase;
+}
+
+p {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 /*# sourceMappingURL=style.css.map */
