@@ -4,7 +4,7 @@
 
 
 //=== Variables ===
-$color-span: #FF8126;
+$color-style: #FF8126;
 $width-max: 1280px;
 //=== Variables ===
 
@@ -17,7 +17,7 @@ $width-max: 1280px;
 }
 
 .sp-color{
-    color: $color-span;
+    color: $color-style;
 }
 
 .sp-color-d{
@@ -134,7 +134,7 @@ background: #C2E8CE;
                         text-align: center;
                     }
                     &-btn{
-                        background-color: #FF8126;
+                        background-color: $color-style;
                         color: #F7F5F0;
                         width: 230px;
                         height: 40px;
