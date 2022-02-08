@@ -137,6 +137,7 @@ background: #C2E8CE;
                         text-align: center;
                     }
                     &-btn{
+                        display: inline-block;
                         background-color: $color-style;
                         color: #F7F5F0;
                         width: 230px;
@@ -144,17 +145,38 @@ background: #C2E8CE;
                         border-radius: 3px;
                         border-color: rgb(255, 153, 0);
                         text-transform: uppercase;
+                        overflow: hidden;
+                        position: relative;
                         //margin-left: 20px;
                         //margin-bottom: 20px;
+                        &:before {
+                            content: "";
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 1.5em;
+                            height: 100%;
+                            background-color: rgba(#fff, 0.6);
+                            transform: translateX(-4em) skewX(-45deg);
+                            transition: 0.5s;
+                        }
+                        &:hover:before {
+                            animation: move-light 0.5s;
+                          }
                     }
                 }
-            }
-        
-            
+            } 
         }
     }
 }
-
+@keyframes move-light {
+    from {
+      transform: translateX(-4em) skewX(-45deg);
+    }
+    to {
+      transform: translateX(15em) skewX(-45deg);
+    }
+}
 
 //=== Lasted-of ===
 
