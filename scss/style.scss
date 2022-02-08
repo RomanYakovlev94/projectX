@@ -122,6 +122,9 @@ background: #C2E8CE;
                 display: flex;
                 flex-direction: column;
                 margin-right: 30px;
+                &:hover {
+                    background-color: #e4e2dee7;
+                }
                 // &-photo{}
                 &__info{
                     &-heading{

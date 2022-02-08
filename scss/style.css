@@ -118,6 +118,10 @@
   margin-right: 30px;
 }
 
+.lasted-of__items-wr .item-card:hover {
+  background-color: #e4e2dee7;
+}
+
 .lasted-of__items-wr .item-card__info-heading {
   font-weight: 500;
   font-size: 22px;
