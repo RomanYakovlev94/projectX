@@ -186,9 +186,4 @@
             transform: translateX(15em) skewX(-45deg);
   }
 }
-
-p {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
 /*# sourceMappingURL=style.css.map */
