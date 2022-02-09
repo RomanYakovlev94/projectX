@@ -139,7 +139,27 @@ background: #C2E8CE;
 
 
 //=== Brands ===
-
+.promo{
+    padding-left: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 700px;
+    background-image:url(/img1p/cheese-promo.jpg);
+  
+}
+.heading{
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 61px;
+    color: wheat;
+}
+.sub-heading{
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 39px;
+    color: wheat;
+}
 //=== Brands ===
 
 
