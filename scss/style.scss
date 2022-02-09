@@ -1,11 +1,21 @@
 //=== Mixins ===
+@mixin undoUlLiStyle {
+    list-style-type: none;
+    text-decoration: none;
+    
+}
 
+ul,a{
+    @include  undoUlLiStyle; 
+}
 //=== Mixins ===
 
 
 //=== Variables ===
 $color-span: #FF8126;
 $width-max: 1280px;
+$main-color: rgba(255, 129, 38, 1);
+
 //=== Variables ===
 
 
@@ -79,9 +89,47 @@ background: #C2E8CE;
     border: 1px solid #BFBFBF;
     padding: 25px;
 }
-    
-
+.navgroup-list{
+    display: flex;
+    gap: 70px;
+}
+.categories{
+    display: block;
+    cursor: pointer;
   
+}
+#border{
+    border-left: 4px solid $main-color;
+    border-bottom: 1px solid #EBEBEB;
+}
+.cotegories-dropdown-content{
+    // width: 150px;
+   
+    position: absolute;
+    left: 370;
+    z-index: 100;
+    background-color: white;
+    padding: 10px;
+}
+.dropdown-content{
+    padding: 0;
+}
+.dropdown-subcotegories_title{
+    gap: 5px;
+    display: flex;
+    padding: 10px 10px;
+    margin: 0 0 10px 0;
+ 
+}
+.dropdown-subcotegories-list{
+    padding: 10px 20px 10px 40px;
+    &_item{
+        padding-bottom: 10px;
+    }
+}
+
+
+
 
 
  
