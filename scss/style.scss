@@ -4,7 +4,7 @@
 
 
 //=== Variables ===
-$color-span: #FF8126;
+$color-style: #FF8126;
 $width-max: 1280px;
 //=== Variables ===
 
@@ -17,7 +17,7 @@ $width-max: 1280px;
 }
 
 .sp-color{
-    color: $color-span;
+    color: $color-style;
 }
 
 .sp-color-d{
@@ -41,6 +41,7 @@ background: #C2E8CE;
     color: #1F1F1F;
 
 }
+
 }
 .header{
     display: flex;
@@ -79,6 +80,46 @@ background: #C2E8CE;
     border: 1px solid #BFBFBF;
     padding: 25px;
 }
+=======
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+
+    }
+.header-mainnav-list{
+    display: flex;
+    gap: 70px;
+    list-style-type: none;
+    &_item{
+        &__link{
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 22px;
+            color: #1F1F1F;
+        }
+
+    }
+   
+} 
+
+
+    .header-navgroup{
+        display: flex;
+        gap: 25px;
+    }
+   .header-nav{
+    display: flex;
+    align-self: center;   
+    background: #FFFFFF;
+    border-radius: 50px;
+    border: 1px solid #BFBFBF;
+    padding: 25px;
+}
+
     
 
   
@@ -101,55 +142,83 @@ background: #C2E8CE;
     max-height: 412px;
     margin: 80px 0 80px 0;
     margin: 0 auto;
+    &__items{
+        &-text{
+            width: 206px;
+            height: 40px;
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 48px;
+            text-align: center;
+            width: 100%;
+        }
+        &-wr{
+            display: flex;
+            text-align: center;
+            .item-card{
+                width: 270px;
+                height: 332px;
+                background-color: #F7F5F0;
+                border-radius: 20px;
+                display: flex;
+                flex-direction: column;
+                margin-right: 30px;
+                &:hover {
+                    background-color: #e4e2dee7;
+                }
+                // &-photo{}
+                &__info{
+                    &-heading{
+                        font-weight: 500;
+                        font-size: 22px;
+                        line-height: 27px;
+                        text-align: center;
+                    }
+                    &-price{
+                        text-align: center;
+                    }
+                    &-btn{
+                        display: inline-block;
+                        background-color: $color-style;
+                        color: #F7F5F0;
+                        width: 230px;
+                        height: 40px;
+                        border-radius: 3px;
+                        border-color: rgb(255, 153, 0);
+                        text-transform: uppercase;
+                        overflow: hidden;
+                        position: relative;
+                        //margin-left: 20px;
+                        //margin-bottom: 20px;
+                        &:before {
+                            content: "";
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 1.5em;
+                            height: 100%;
+                            background-color: rgba(#fff, 0.6);
+                            transform: translateX(-4em) skewX(-45deg);
+                            transition: 0.5s;
+                        }
+                        &:hover:before {
+                            animation: move-light 0.5s;
+                          }
+                    }
+                }
+            } 
+        }
+    }
+}
+@keyframes move-light {
+    from {
+      transform: translateX(-4em) skewX(-45deg);
+    }
+    to {
+      transform: translateX(15em) skewX(-45deg);
+    }
 }
 
-// .lasted-of__items{
-    
-// }
-.lasted-of__text{
-    width: 206px;
-    height: 40px;
-    font-weight: bold;
-    font-size: 40px;
-    line-height: 48px;
-    text-align: center;
-    width: 100%;
-}
-.lasted-of__wr{
-    display: flex;
-    text-align: center;
-}
-.lasted-of__item{
-    width: 270px;
-    height: 332px;
-    background-color: #F7F5F0;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    margin-right: 30px;
-}
-
-.lasted-of__heading{
-    font-weight: 500;
-    font-size: 22px;
-    line-height: 27px;
-    text-align: center;
-}
-
-.lasted-of__price{
-    text-align: center;
-}
-
-.lasted-off__btn__add{
-    background-color: #FF8126;
-    color: #F7F5F0;
-    width: 230px;
-    height: 40px;
-    border-radius: 3px;
-    text-transform: uppercase;
-    //margin-left: 20px;
-    //margin-bottom: 20px;
-}
 //=== Lasted-of ===
 
 
@@ -181,9 +250,5 @@ background: #C2E8CE;
 //=== Footer ===
 
 //=== Footer ===
-
-p{
-    box-sizing: border-box;
-}
 
 

@@ -86,7 +86,7 @@
   margin: 0 auto;
 }
 
-.lasted-of__text {
+.lasted-of__items-text {
   width: 206px;
   height: 40px;
   font-weight: bold;
@@ -96,14 +96,14 @@
   width: 100%;
 }
 
-.lasted-of__wr {
+.lasted-of__items-wr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   text-align: center;
 }
 
-.lasted-of__item {
+.lasted-of__items-wr .item-card {
   width: 270px;
   height: 332px;
   background-color: #F7F5F0;
@@ -118,24 +118,75 @@
   margin-right: 30px;
 }
 
-.lasted-of__heading {
+.lasted-of__items-wr .item-card:hover {
+  background-color: #e4e2dee7;
+}
+
+.lasted-of__items-wr .item-card__info-heading {
   font-weight: 500;
   font-size: 22px;
   line-height: 27px;
   text-align: center;
 }
 
-.lasted-of__price {
+.lasted-of__items-wr .item-card__info-price {
   text-align: center;
 }
 
-.lasted-off__btn__add {
+.lasted-of__items-wr .item-card__info-btn {
+  display: inline-block;
   background-color: #FF8126;
   color: #F7F5F0;
   width: 230px;
   height: 40px;
   border-radius: 3px;
+
+
+  border-color: #ff9900;
   text-transform: uppercase;
+  overflow: hidden;
+  position: relative;
+}
+
+.lasted-of__items-wr .item-card__info-btn:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1.5em;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+  -webkit-transform: translateX(-4em) skewX(-45deg);
+          transform: translateX(-4em) skewX(-45deg);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.lasted-of__items-wr .item-card__info-btn:hover:before {
+  -webkit-animation: move-light 0.5s;
+          animation: move-light 0.5s;
+}
+
+@-webkit-keyframes move-light {
+  from {
+    -webkit-transform: translateX(-4em) skewX(-45deg);
+            transform: translateX(-4em) skewX(-45deg);
+  }
+  to {
+    -webkit-transform: translateX(15em) skewX(-45deg);
+            transform: translateX(15em) skewX(-45deg);
+  }
+}
+
+@keyframes move-light {
+  from {
+    -webkit-transform: translateX(-4em) skewX(-45deg);
+            transform: translateX(-4em) skewX(-45deg);
+  }
+  to {
+    -webkit-transform: translateX(15em) skewX(-45deg);
+            transform: translateX(15em) skewX(-45deg);
+  }
 }
 
 p {
