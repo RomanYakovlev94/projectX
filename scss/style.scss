@@ -67,17 +67,54 @@ background: #C2E8CE;
 } 
 
 
-    .header-navgroup{
-        display: flex;
-        gap: 25px;
-    }
-   .header-nav{
+.header-navgroup{
+    display: flex;
+    gap: 25px;
+}
+.header-nav{
     display: flex;
     align-self: center;   
     background: #FFFFFF;
     border-radius: 50px;
     border: 1px solid #BFBFBF;
     padding: 25px;
+}
+.navgroup-list{
+    display: flex;
+    gap: 70px;
+}
+.categories{
+    display: block;
+    cursor: pointer;
+}
+// #border{
+//     border-left: 4px solid $main-color;
+//     border-bottom: 1px solid #EBEBEB;
+// }
+.cotegories-dropdown-content{
+    // width: 150px;
+   
+    position: absolute;
+    left: 370;
+    z-index: 100;
+    background-color: white;
+    padding: 10px;
+}
+.dropdown-content{
+    padding: 0;
+}
+.dropdown-subcotegories_title{
+    gap: 5px;
+    display: flex;
+    padding: 10px 10px;
+    margin: 0 0 10px 0;
+ 
+}
+.dropdown-subcotegories-list{
+    padding: 10px 20px 10px 40px;
+    &_item{
+        padding-bottom: 10px;
+    }
 }
     
 
@@ -91,7 +128,10 @@ background: #C2E8CE;
 
 
 //=== Brands ===
-
+.promo{
+    height: 600px;
+    background-image: url(/img1p/cheese-promo.jpg);
+}
 //=== Brands ===
 
 
@@ -114,60 +154,61 @@ background: #C2E8CE;
         &-wr{
             display: flex;
             text-align: center;
-            .item-card{
-                width: 270px;
-                height: 332px;
-                background-color: #F7F5F0;
-                border-radius: 20px;
-                display: flex;
-                flex-direction: column;
-                margin-right: 30px;
-                &:hover {
-                    background-color: #e4e2dee7;
-                }
-                // &-photo{}
-                &__info{
-                    &-heading{
-                        font-weight: 500;
-                        font-size: 22px;
-                        line-height: 27px;
-                        text-align: center;
-                    }
-                    &-price{
-                        text-align: center;
-                    }
-                    &-btn{
-                        display: inline-block;
-                        background-color: $color-style;
-                        color: #F7F5F0;
-                        width: 230px;
-                        height: 40px;
-                        border-radius: 3px;
-                        border-color: rgb(255, 153, 0);
-                        text-transform: uppercase;
-                        overflow: hidden;
-                        position: relative;
-                        //margin-left: 20px;
-                        //margin-bottom: 20px;
-                        &:before {
-                            content: "";
-                            position: absolute;
-                            top: 0;
-                            left: 0;
-                            width: 1.5em;
-                            height: 100%;
-                            background-color: rgba(#fff, 0.6);
-                            transform: translateX(-4em) skewX(-45deg);
-                            transition: 0.5s;
-                        }
-                        &:hover:before {
-                            animation: move-light 0.5s;
-                          }
-                    }
-                }
-            } 
+            
+    }
+}
+.item-card{
+    width: 270px;
+    height: 332px;
+    background-color: #F7F5F0;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+    &:hover {
+        background-color: #e4e2dee7;
+    }
+    // &-photo{}
+    &__info{
+        &-heading{
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 27px;
+            text-align: center;
+        }
+        &-price{
+            text-align: center;
+        }
+        &-btn{
+            display: inline-block;
+            background-color: $color-style;
+            color: #F7F5F0;
+            width: 230px;
+            height: 40px;
+            border-radius: 3px;
+            border-color: rgb(255, 153, 0);
+            text-transform: uppercase;
+            overflow: hidden;
+            position: relative;
+            //margin-left: 20px;
+            //margin-bottom: 20px;
+            &:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 1.5em;
+                height: 100%;
+                background-color: rgba(#fff, 0.6);
+                transform: translateX(-4em) skewX(-45deg);
+                transition: 0.5s;
+            }
+            &:hover:before {
+                animation: move-light 0.5s;
+              }
         }
     }
+} 
 }
 .item-card{
 @keyframes move-light {
@@ -177,6 +218,7 @@ background: #C2E8CE;
     to {
       transform: translateX(15em) skewX(-45deg);
     }
+}
 }
 
 
