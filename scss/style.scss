@@ -169,6 +169,7 @@ background: #C2E8CE;
         }
     }
 }
+.item-card{
 @keyframes move-light {
     from {
       transform: translateX(-4em) skewX(-45deg);
@@ -177,6 +178,9 @@ background: #C2E8CE;
       transform: translateX(15em) skewX(-45deg);
     }
 }
+
+
+
 
 //=== Lasted-of ===
 

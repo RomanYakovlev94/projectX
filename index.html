@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/scss/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
     <title>Document</title>
 </head>
 <body>
-    //=== Header ===
+    <!-- header -->
     <div class="green-shit">
         <span class="green-shit_text">Бесплатна доставка при заказе на сумму от 2000р</span></div>
     <div class="header wrapper">
@@ -67,91 +69,208 @@
             </div>
 
         </div>
-//=== Header ===        
+<!-- ===header===       -->
 
     </div>
     <div class="brands">
         
     </div>
-    //=== Header ===   
-    //=== Lasted-of ===
+    
+    <!-- //=== Lasted-of === -->
     <div class="lasted-of">
         <div class="lasted-of__items wrapper">
             <p class="lasted-of__items-text"> Последние<span class="sp-color">&nbspПоступления</span></p>
-            <div class="lasted-of__items-wr">
-                <div class="item-card">
-                    <div class="item-card__photo">
-                        <img src="/img1p/lasted-img1.png" alt="" width="270px" height="160px">
-                    </div>
-                    <div class="item-card__info">
-                        <p class="item-card__info-heading">Пеперони Пицца</p>
-                        <p class="item-card__info-price"><span class="sp-color">₽1350.00</span>&nbsp<span class="sp-color-d">₽1950.00</span></p>
-                        <button class="item-card__info-btn">Купить</button>
-                    </div>
+            
+        </div>
+      
+        </head>
+      
+        <body>
+          <!-- Swiper -->
+          <style>
+            html,
+            body {
+              position: relative;
+              height: 100%;
+            }
+            
+            body {
+              background: #eee;
+              font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+              font-size: 14px;
+              color: #000;
+              margin: 0;
+              padding: 0;
+            }
+            
+            .swiper {
+              width: 100%;
+              padding-top: 50px;
+              padding-bottom: 50px;
+            }
+            
+            .swiper-slide {
+              background-position: center;
+              background-size: cover;
+              width: 270px;
+              height: 300px;
+            }
+            
+            .swiper-slide img {
+              display: block;
+              width: 100%;
+              height: 100%;
+              border-radius: 20px;
+            }
+            </style>
+            <!-- Swiper -->
+      <div class="swiper mySwiper wrapper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide item">
+            <div class="item-card">
+                <div class="item-card__photo">
+                    <img src="img1p/assorti-narezka-kolbasa-olivka.jpg" alt="" width="270px" height="160px">
                 </div>
-                <div class="item-card">
-                    <div class="item-card__photo">
-                        <img src="/img1p/lasted-img2.png" alt="" width="270px" height="160px">
-                    </div>
-                    <div class="item-card__info">
-                        <p class="item-card__info-heading">Банановые Блины</p>
-                        <p class="item-card__info-price"><span class="sp-color">₽1350.00</span>&nbsp<span class="sp-color-d">₽1950.00</span></p>
-                        <button class="item-card__info-btn">Купить</button>
-                    </div>
-                </div>
-                <div class="item-card">
-                    <div class="item-card__photo">
-                        <img src="/img1p/lasted-img3.png" alt="" width="270px" height="160px">
-                    </div>
-                    <div class="item-card__info">
-                        <p class="item-card__info-heading">Авокадо</p>
-                        <p class="item-card__info-price"><span class="sp-color">₽850.00</span>&nbsp<span class="sp-color-d">₽1050.00</span></p>
-                        <button class="item-card__info-btn">Купить</button>
-                    </div>
-                </div>
-                <div class="item-card">
-                    <div class="item-card__photo">
-                        <img src="/img1p/lasted-img4.png" alt="" width="270px" height="160px">
-                    </div>
-                    <div class="item-card__info">
-                        <p class="item-card__info-heading">Вагон Апельсинов</p>
-                        <p class="item-card__info-price"><span class="sp-color">₽650.00</span>&nbsp<span class="sp-color-d">₽950.00</span></p>
-                        <button class="item-card__info-btn">Купить</button>
-                    </div>
+                <div class="item-card__info">
+                    <p class="item-card__info-heading">Авокадо</p>
+                    <p class="item-card__info-price"><span class="sp-color">₽850.00</span>&nbsp<span class="sp-color-d">₽1050.00</span></p>
+                    <button class="item-card__info-btn">Купить</button>
                 </div>
             </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="item-card">
+                <div class="item-card__photo">
+                    <img src="/img1p/ch1.jpg" alt="" width="270px" height="160px">
+                </div>
+                <div class="item-card__info">
+                    <p class="item-card__info-heading">Авокадо</p>
+                    <p class="item-card__info-price"><span class="sp-color">₽850.00</span>&nbsp<span class="sp-color-d">₽1050.00</span></p>
+                    <button class="item-card__info-btn">Купить</button>
+                </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="item-card">
+                <div class="item-card__photo">
+                    <img src="/img1p/kolbasa-foto-narezka.jpg" alt="" width="270px" height="160px">
+                </div>
+                <div class="item-card__info">
+                    <p class="item-card__info-heading">Авокадо</p>
+                    <p class="item-card__info-price"><span class="sp-color">₽850.00</span>&nbsp<span class="sp-color-d">₽1050.00</span></p>
+                    <button class="item-card__info-btn">Купить</button>
+                </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="item-card">
+                <div class="item-card__photo">
+                    <img src="/img1p/kolbasa-spetsii-kusochki-1.jpg" alt="" width="270px" height="160px">
+                </div>
+                <div class="item-card__info">
+                    <p class="item-card__info-heading">Авокадо</p>
+                    <p class="item-card__info-price"><span class="sp-color">₽850.00</span>&nbsp<span class="sp-color-d">₽1050.00</span></p>
+                    <button class="item-card__info-btn">Купить</button>
+                </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="item-card">
+                <div class="item-card__photo">
+                    <img src="/img1p/pear-wine-sausage-bread-vino.jpg" alt="" width="270px" height="160px">
+                </div>
+                <div class="item-card__info">
+                    <p class="item-card__info-heading">Авокадо</p>
+                    <p class="item-card__info-price"><span class="sp-color">₽850.00</span>&nbsp<span class="sp-color-d">₽1050.00</span></p>
+                    <button class="item-card__info-btn">Купить</button>
+                </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="item-card">
+                <div class="item-card__photo">
+                    <img src="/img1p/seafoods-fish-pepper-ryba.jpg" alt="" width="270px" height="160px">
+                </div>
+                <div class="item-card__info">
+                    <p class="item-card__info-heading">Авокадо</p>
+                    <p class="item-card__info-price"><span class="sp-color">₽850.00</span>&nbsp<span class="sp-color-d">₽1050.00</span></p>
+                    <button class="item-card__info-btn">Купить</button>
+                </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="item-card">
+                <div class="item-card__photo">
+                    <img src="/img1p/lasted-img3.png" alt="" width="270px" height="160px">
+                </div>
+                <div class="item-card__info">
+                    <p class="item-card__info-heading">Авокадо</p>
+                    <p class="item-card__info-price"><span class="sp-color">₽850.00</span>&nbsp<span class="sp-color-d">₽1050.00</span></p>
+                    <button class="item-card__info-btn">Купить</button>
+                </div>
+            </div>
+          </div>
+          
         </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      
+          <!-- Swiper JS -->
+          <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      
+          <!-- Initialize Swiper -->
+          <script>
+            var swiper = new Swiper(".mySwiper", {
+              effect: "coverflow",
+              grabCursor: true,
+              centeredSlides: true,
+              slidesPerView: "auto",
+              coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+              },
+              pagination: {
+                el: ".swiper-pagination",
+              },
+            });
+          </script>
+        </body>
+      </html>
     </div>
-    //=== Lasted-of ===
-    //=== Why-us ===
+    
+    <!-- //=== Lasted-of ===
+    //=== Why-us === -->
     <div class="why-us">
 
     </div>
-    //=== Why-us ===
-    //=== Who-makes ===
+    <!-- //=== Why-us ===
+    //=== Who-makes === -->
     <div class="who-makes">
 
     </div>
-    //=== Who-makes ===
-    //=== Surprice-exotic ===
+    <!-- //=== Who-makes ===
+    //=== Surprice-exotic === -->
     <div class="surprice-exotic">
 
     </div>
-    //=== Surprice-exotic ===
-    //=== Slider-photos ===
+    <!-- //=== Surprice-exotic ===
+    //=== Slider-photos === -->
     <div class="slider-photos">
 
     </div>
-    //=== Slider-photos ===
-    //=== We-in-social ===
+    <!-- //=== Slider-photos ===
+    //=== We-in-social === -->
     <div class="we-in-social">
 
     </div>
-    //=== We-in-social ===
-    //=== Footer ===
+    <!-- //=== We-in-social ===
+    //=== Footer === -->
     <div class="footer">
 
     </div>
-    //=== Footer ===
+    <!-- //=== Footer === -->
 </body>
 </html>
