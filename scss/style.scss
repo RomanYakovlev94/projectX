@@ -218,6 +218,27 @@ background: #C2E8CE;
     //margin-left: 20px;
     //margin-bottom: 20px;
 }
+
+
+.swiper {
+    width: 100%;
+    padding-top: 500px;
+    padding-bottom: 500px;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 270px;
+    height: 270px;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
 //=== Lasted-of ===
 
 
@@ -242,7 +263,17 @@ background: #C2E8CE;
 
 
 //=== We-in-social ===
-
+.we-in-social{
+    margin-top: 50px;
+    background: rgba(255, 129, 38, 0.08);
+}
+.social{
+    padding: 50px 0 50px;
+}
+.social-text{
+    display: flex;
+    justify-content: center;
+}
 //=== We-in-social ===
 
 
