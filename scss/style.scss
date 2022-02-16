@@ -15,6 +15,9 @@ $width-max: 1280px;
     margin: 0 auto;
 
 }
+.container{
+    background: #FFFFFF;
+}
 
 .sp-color{
     color: $color-style;
@@ -67,17 +70,65 @@ background: #C2E8CE;
 } 
 
 
-    .header-navgroup{
-        display: flex;
-        gap: 25px;
-    }
-   .header-nav{
+.header-navgroup{
     display: flex;
-    align-self: center;   
+    gap: 25px;
+}
+.header-nav{
+    display: flex;
     background: #FFFFFF;
     border-radius: 50px;
     border: 1px solid #BFBFBF;
-    padding: 25px;
+    /* padding: 25px; */
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.navgroup-list{
+    list-style-type: none;
+    display: flex;
+    gap: 70px;
+}
+.navgroup-list_item__link{
+    text-decoration: none;
+}
+.categories{
+    display: block;
+    cursor: pointer;
+}
+// #border{
+//     border-left: 4px solid $main-color;
+//     border-bottom: 1px solid #EBEBEB;
+// }
+.cotegories-dropdown-content{
+    // width: 150px;
+   
+    position: absolute;
+    left: 370;
+    z-index: 100;
+    background-color: white;
+    padding: 10px;
+}
+.dropdown-content{
+    padding: 0;
+    list-style-type: none;
+}
+.dropdown-subcotegories_title{
+    gap: 5px;
+    display: flex;
+    padding: 10px 10px;
+    margin: 0 0 10px 0;
+    border-left: 4px solid #FF8126;
+ 
+}
+.dropdown-subcotegories-list{
+    padding: 10px 20px 10px 40px;
+    list-style-type: none;
+    &_item{
+        padding-bottom: 10px;
+    }
 }
     
 
@@ -91,7 +142,41 @@ background: #C2E8CE;
 
 
 //=== Brands ===
+.promo{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    background-image: url(/img1p/cheese-promo.jpg);
+    &_title{
+        font-weight: bold;
+        font-size: 50px;
+        line-height: 61px;
+        color: #F7F5F0;
+        margin-left: 55px;
+        margin-top: 135px;
+        margin-bottom: 10px;
+    }
+    &_subtitle{
+        font-weight: 300;
+        font-size: 26px;
+        line-height: 39px;
+        color: #F7F5F0;
+        margin-left: 55px;
+       
+        margin-bottom: 48px;
 
+    }
+    &_button{
+        width: 200px;
+        height: 45px;
+        left: 61px;
+        top: 445px;
+        background: #FF8126;
+        border-radius: 5px;
+        margin-left: 61px;
+       
+    }
+}
 //=== Brands ===
 
 
@@ -114,61 +199,63 @@ background: #C2E8CE;
         &-wr{
             display: flex;
             text-align: center;
-            .item-card{
-                width: 270px;
-                height: 332px;
-                background-color: #F7F5F0;
-                border-radius: 20px;
-                display: flex;
-                flex-direction: column;
-                margin-right: 30px;
-                &:hover {
-                    background-color: #e4e2dee7;
-                }
-                // &-photo{}
-                &__info{
-                    &-heading{
-                        font-weight: 500;
-                        font-size: 22px;
-                        line-height: 27px;
-                        text-align: center;
-                    }
-                    &-price{
-                        text-align: center;
-                    }
-                    &-btn{
-                        display: inline-block;
-                        background-color: $color-style;
-                        color: #F7F5F0;
-                        width: 230px;
-                        height: 40px;
-                        border-radius: 3px;
-                        border-color: rgb(255, 153, 0);
-                        text-transform: uppercase;
-                        overflow: hidden;
-                        position: relative;
-                        //margin-left: 20px;
-                        //margin-bottom: 20px;
-                        &:before {
-                            content: "";
-                            position: absolute;
-                            top: 0;
-                            left: 0;
-                            width: 1.5em;
-                            height: 100%;
-                            background-color: rgba(#fff, 0.6);
-                            transform: translateX(-4em) skewX(-45deg);
-                            transition: 0.5s;
-                        }
-                        &:hover:before {
-                            animation: move-light 0.5s;
-                          }
-                    }
-                }
-            } 
-        }
+            
     }
 }
+.item-card{
+    width: 270px;
+    height: 332px;
+    background-color: #F7F5F0;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+    &:hover {
+        background-color: #e4e2dee7;
+    }
+    // &-photo{}
+    &__info{
+        &-heading{
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 27px;
+            text-align: center;
+        }
+        &-price{
+            text-align: center;
+        }
+        &-btn{
+            display: inline-block;
+            background-color: $color-style;
+            color: #F7F5F0;
+            width: 230px;
+            height: 40px;
+            border-radius: 3px;
+            border-color: rgb(255, 153, 0);
+            text-transform: uppercase;
+            overflow: hidden;
+            position: relative;
+            //margin-left: 20px;
+            //margin-bottom: 20px;
+            &:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 1.5em;
+                height: 100%;
+                background-color: rgba(#fff, 0.6);
+                transform: translateX(-4em) skewX(-45deg);
+                transition: 0.5s;
+            }
+            &:hover:before {
+                animation: move-light 0.5s;
+              }
+        }
+    }
+} 
+}
+.item-card{
 @keyframes move-light {
     from {
       transform: translateX(-4em) skewX(-45deg);
@@ -177,6 +264,10 @@ background: #C2E8CE;
       transform: translateX(15em) skewX(-45deg);
     }
 }
+}
+
+
+
 
 //=== Lasted-of ===
 
@@ -209,3 +300,5 @@ background: #C2E8CE;
 //=== Footer ===
 
 //=== Footer ===
+
+
