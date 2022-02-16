@@ -15,6 +15,9 @@ $width-max: 1280px;
     margin: 0 auto;
 
 }
+.container{
+    background: #FFFFFF;
+}
 
 .sp-color{
     color: $color-style;
@@ -73,15 +76,23 @@ background: #C2E8CE;
 }
 .header-nav{
     display: flex;
-    align-self: center;   
     background: #FFFFFF;
     border-radius: 50px;
     border: 1px solid #BFBFBF;
-    padding: 25px;
+    /* padding: 25px; */
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    
 }
 .navgroup-list{
+    list-style-type: none;
     display: flex;
     gap: 70px;
+}
+.navgroup-list_item__link{
+    text-decoration: none;
 }
 .categories{
     display: block;
@@ -102,16 +113,19 @@ background: #C2E8CE;
 }
 .dropdown-content{
     padding: 0;
+    list-style-type: none;
 }
 .dropdown-subcotegories_title{
     gap: 5px;
     display: flex;
     padding: 10px 10px;
     margin: 0 0 10px 0;
+    border-left: 4px solid #FF8126;
  
 }
 .dropdown-subcotegories-list{
     padding: 10px 20px 10px 40px;
+    list-style-type: none;
     &_item{
         padding-bottom: 10px;
     }
@@ -129,8 +143,39 @@ background: #C2E8CE;
 
 //=== Brands ===
 .promo{
-    height: 600px;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
     background-image: url(/img1p/cheese-promo.jpg);
+    &_title{
+        font-weight: bold;
+        font-size: 50px;
+        line-height: 61px;
+        color: #F7F5F0;
+        margin-left: 55px;
+        margin-top: 135px;
+        margin-bottom: 10px;
+    }
+    &_subtitle{
+        font-weight: 300;
+        font-size: 26px;
+        line-height: 39px;
+        color: #F7F5F0;
+        margin-left: 55px;
+       
+        margin-bottom: 48px;
+
+    }
+    &_button{
+        width: 200px;
+        height: 45px;
+        left: 61px;
+        top: 445px;
+        background: #FF8126;
+        border-radius: 5px;
+        margin-left: 61px;
+       
+    }
 }
 //=== Brands ===
 
