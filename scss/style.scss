@@ -197,6 +197,9 @@ background: #C2E8CE;
        
     }
 }
+.fa-solid{
+    color: #1F1F1F;
+}
 //=== Brands ===
 
 
@@ -294,6 +297,46 @@ background: #C2E8CE;
 
 
 //=== Why-us ===
+.why-us{
+    margin-top: 200px;
+    height: 400px;
+
+    &_list{
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+    }
+    &_item{
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+    }
+    &_title{
+        font-family: Lato;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px;
+        color: #1F1F1F;
+        margin-top: 20px;
+    }
+    &_text{
+        font-family: Poppins;
+        font-size: 16px;
+        line-height: 24px; 
+        color: #1F1F1F;
+        margin-top: 20px;
+        &__indent{
+            margin-top: 42px;
+            font-family: Poppins;
+            font-size: 16px;
+            line-height: 24px; 
+            color: #1F1F1F;
+            margin-top: 42px;
+        }
+    }
+    }
+
+  
 
 //=== Why-us ===
 
