@@ -16,7 +16,7 @@
   color: #656565;
 }
 
-.green-shit {
+.delivery {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -27,7 +27,7 @@
   background: #C2E8CE;
 }
 
-.green-shit_text {
+.delivery_text {
   font-weight: 500;
   font-size: 14px;
   line-height: 21px;
@@ -205,7 +205,6 @@
 }
 
 .lasted-of {
-  max-width: 1280px;
   max-height: 412px;
   margin: 80px 0 80px 0;
   margin: 0 auto;
