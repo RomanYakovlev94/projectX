@@ -99,11 +99,29 @@
 
 .navgroup-list_item__link {
   text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #1F1F1F;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .categories {
   display: block;
   cursor: pointer;
+}
+
+.categories-box_title {
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #1F1F1F;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .cotegories-dropdown-content {
@@ -112,6 +130,7 @@
   z-index: 100;
   background-color: white;
   padding: 10px;
+  margin-top: 20px;
 }
 
 .dropdown-content {
@@ -151,6 +170,7 @@
 }
 
 .promo_title {
+  font-family: 'Cormorant', serif;
   font-weight: bold;
   font-size: 50px;
   line-height: 61px;
@@ -166,6 +186,7 @@
   line-height: 39px;
   color: #F7F5F0;
   margin-left: 55px;
+  font-family: 'Poppins', sans-serif;
   margin-bottom: 48px;
 }
 
@@ -177,6 +198,10 @@
   background: #FF8126;
   border-radius: 5px;
   margin-left: 61px;
+}
+
+.fa-solid {
+  color: #1F1F1F;
 }
 
 .lasted-of {
@@ -215,6 +240,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-right: 30px;
 }
 
@@ -285,5 +313,57 @@
     -webkit-transform: translateX(15em) skewX(-45deg);
             transform: translateX(15em) skewX(-45deg);
   }
+}
+
+.why-us {
+  margin-top: 200px;
+  height: 400px;
+}
+
+.why-us_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style-type: none;
+}
+
+.why-us_item {
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.why-us_title {
+  font-family: Lato;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #1F1F1F;
+  margin-top: 20px;
+}
+
+.why-us_text {
+  font-family: Poppins;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1F1F1F;
+  margin-top: 20px;
+}
+
+.why-us_text__indent {
+  margin-top: 42px;
+  font-family: Poppins;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1F1F1F;
+  margin-top: 42px;
 }
 /*# sourceMappingURL=style.css.map */
