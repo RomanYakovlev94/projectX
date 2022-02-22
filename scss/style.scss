@@ -31,7 +31,7 @@ $width-max: 1280px;
 
 
 //=== Header ===
-.green-shit{
+.delivery{
 display: flex;
 justify-content: center;
 padding: 15px;
@@ -44,6 +44,9 @@ background: #C2E8CE;
     color: #1F1F1F;
 
 }
+}
+.burger{
+    display: none;
 }
 .header{
     display: flex;
@@ -93,10 +96,28 @@ background: #C2E8CE;
 }
 .navgroup-list_item__link{
     text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #1F1F1F;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .categories{
     display: block;
     cursor: pointer;
+}
+.categories-box_title{
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #1F1F1F;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
 }
 // #border{
 //     border-left: 4px solid $main-color;
@@ -110,6 +131,7 @@ background: #C2E8CE;
     z-index: 100;
     background-color: white;
     padding: 10px;
+    margin-top: 20px;
 }
 .dropdown-content{
     padding: 0;
@@ -130,6 +152,45 @@ background: #C2E8CE;
         padding-bottom: 10px;
     }
 }
+
+@media (max-width: 767px) {
+    .burger{
+        display: block;
+    }
+    .header{
+        display: none;
+    }
+    .why-us_list{
+        flex-direction: column;
+        align-items: center;
+    }
+    .lasted-of__items-text{
+        margin-top: 150px;
+    }
+    .why-us_item{
+        align-items: center;
+        margin-bottom: 50px;
+        min-width: 320px;
+    }
+    .why-us_title{
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    .why-us_text{
+        margin-top: 1px;
+    }
+    .why-us_text__indent{
+        margin-top: 5px;
+    }
+    .promo{
+        text-align: center;
+        &_button{
+            align-self: center;
+        }
+    }
+
+    
+}
     
 
   
@@ -147,7 +208,9 @@ background: #C2E8CE;
     flex-direction: column;
     height: 500px;
     background-image: url(/img1p/cheese-promo.jpg);
+    margin-bottom: 80px;
     &_title{
+        font-family: 'Cormorant', serif;
         font-weight: bold;
         font-size: 50px;
         line-height: 61px;
@@ -162,7 +225,7 @@ background: #C2E8CE;
         line-height: 39px;
         color: #F7F5F0;
         margin-left: 55px;
-       
+        font-family: 'Poppins', sans-serif;
         margin-bottom: 48px;
 
     }
@@ -177,19 +240,21 @@ background: #C2E8CE;
        
     }
 }
+.fa-solid{
+    color: #1F1F1F;
+}
 //=== Brands ===
 
 
 //=== Lasted-of ===
 .lasted-of{
-    max-width: $width-max;
+
     max-height: 412px;
     margin: 80px 0 80px 0;
     margin: 0 auto;
     &__items{
         &-text{
             width: 206px;
-            height: 40px;
             font-weight: bold;
             font-size: 40px;
             line-height: 48px;
@@ -209,6 +274,7 @@ background: #C2E8CE;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin-right: 30px;
     &:hover {
         background-color: #e4e2dee7;
@@ -273,6 +339,49 @@ background: #C2E8CE;
 
 
 //=== Why-us ===
+.why-us{
+    margin-top: 100px;
+    
+
+    &_list{
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        margin-top: 50px;
+    }
+    &_item{
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+    }
+    &_title{
+        font-family: Lato;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px;
+        color: #1F1F1F;
+        margin-top: 20px;
+        
+    }
+    &_text{
+        font-family: Poppins;
+        font-size: 16px;
+        line-height: 24px; 
+        color: #1F1F1F;
+        margin-top: 10px;
+        &__indent{
+            margin-top: 28px;
+            font-family: Poppins;
+            font-size: 16px;
+            line-height: 24px; 
+            color: #1F1F1F;
+            
+        }
+    }
+    }
+
+
+  
 
 //=== Why-us ===
 

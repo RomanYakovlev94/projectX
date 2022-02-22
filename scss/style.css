@@ -16,7 +16,7 @@
   color: #656565;
 }
 
-.green-shit {
+.delivery {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -27,12 +27,16 @@
   background: #C2E8CE;
 }
 
-.green-shit_text {
+.delivery_text {
   font-weight: 500;
   font-size: 14px;
   line-height: 21px;
   text-align: center;
   color: #1F1F1F;
+}
+
+.burger {
+  display: none;
 }
 
 .header {
@@ -99,11 +103,29 @@
 
 .navgroup-list_item__link {
   text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #1F1F1F;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .categories {
   display: block;
   cursor: pointer;
+}
+
+.categories-box_title {
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #1F1F1F;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .cotegories-dropdown-content {
@@ -112,6 +134,7 @@
   z-index: 100;
   background-color: white;
   padding: 10px;
+  margin-top: 20px;
 }
 
 .dropdown-content {
@@ -138,6 +161,52 @@
   padding-bottom: 10px;
 }
 
+@media (max-width: 767px) {
+  .burger {
+    display: block;
+  }
+  .header {
+    display: none;
+  }
+  .why-us_list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .lasted-of__items-text {
+    margin-top: 150px;
+  }
+  .why-us_item {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 50px;
+    min-width: 320px;
+  }
+  .why-us_title {
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  .why-us_text {
+    margin-top: 1px;
+  }
+  .why-us_text__indent {
+    margin-top: 5px;
+  }
+  .promo {
+    text-align: center;
+  }
+  .promo_button {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
 .promo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -148,9 +217,11 @@
           flex-direction: column;
   height: 500px;
   background-image: url(/img1p/cheese-promo.jpg);
+  margin-bottom: 80px;
 }
 
 .promo_title {
+  font-family: 'Cormorant', serif;
   font-weight: bold;
   font-size: 50px;
   line-height: 61px;
@@ -166,6 +237,7 @@
   line-height: 39px;
   color: #F7F5F0;
   margin-left: 55px;
+  font-family: 'Poppins', sans-serif;
   margin-bottom: 48px;
 }
 
@@ -179,8 +251,11 @@
   margin-left: 61px;
 }
 
+.fa-solid {
+  color: #1F1F1F;
+}
+
 .lasted-of {
-  max-width: 1280px;
   max-height: 412px;
   margin: 80px 0 80px 0;
   margin: 0 auto;
@@ -188,7 +263,6 @@
 
 .lasted-of__items-text {
   width: 206px;
-  height: 40px;
   font-weight: bold;
   font-size: 40px;
   line-height: 48px;
@@ -215,6 +289,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-right: 30px;
 }
 
@@ -285,5 +362,56 @@
     -webkit-transform: translateX(15em) skewX(-45deg);
             transform: translateX(15em) skewX(-45deg);
   }
+}
+
+.why-us {
+  margin-top: 100px;
+}
+
+.why-us_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style-type: none;
+  margin-top: 50px;
+}
+
+.why-us_item {
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.why-us_title {
+  font-family: Lato;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #1F1F1F;
+  margin-top: 20px;
+}
+
+.why-us_text {
+  font-family: Poppins;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1F1F1F;
+  margin-top: 10px;
+}
+
+.why-us_text__indent {
+  margin-top: 28px;
+  font-family: Poppins;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1F1F1F;
 }
 /*# sourceMappingURL=style.css.map */
