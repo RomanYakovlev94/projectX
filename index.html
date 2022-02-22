@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/scss/style.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
  
 
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@800&family=Fruktur&family=Lato:wght@400;700;900&family=Lobster&family=Roboto&display=swap" rel="stylesheet">
@@ -19,7 +21,71 @@
    <div class="container">
         <!-- header -->
     <div class="delivery">
-        <span class="delivery_text">Бесплатна доставка при заказе на сумму от 2000р</span></div>
+        <span class="delivery_text">Бесплатна доставка при заказе на сумму от 2000р</span>
+    </div>
+    <div class="burger">
+        <nav class="navbar navbar-light bg-light fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                  <img src="/img1p/logo-img.png" width="25px" height="25px" alt="">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                 <img class="offcanvas-logo" src="/img1p/logo-img.png" width="25px" height="25px" alt="img">
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Главная</a>
+                    </li>
+                  
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Категории
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                        <li><a class="dropdown-item" href="#">
+                            <img src="/img1p/sosage-icon.png" width="25px" height="25px" alt="img">
+                            Колбаса
+                        </a>
+                    </li>
+                        <li><a class="dropdown-item" href="#">
+                            <img src="/img1p/milk-icon.png" width="25px" height="25px" alt="img">
+                            Молоко
+                        </a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">
+                        <img src="/img1p/cheese-icon.png" width="25px" height="25px" alt="img">
+                        Сыр
+                    </a>
+                </li>
+
+                        
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                       
+                      </ul>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Бренды</a></li>
+                    <li><a class="dropdown-item" href="#">О нас</a></li>
+                    <li><a class="dropdown-item" href="#">Контакты</a></li>
+                  </ul>
+                  <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Поиск по сайту</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </nav>
+
+    </div>
+    
         <i class="fa-regular fa-face-grin-beam-sweat"></i>
     <div class="header wrapper">
         <div class="logo">
@@ -138,7 +204,9 @@
     <!-- //=== Lasted-of === -->
     <div class="lasted-of">
         <div class="lasted-of__items">
-            <p class="lasted-of__items-text"> Последние<span class="sp-color">&nbspПоступления</span></p>
+            <p class="lasted-of__items-text">
+                <span>Последние</span>
+                <span class="sp-color">&nbspПоступления</span></p>
             
         </div>
       
@@ -318,7 +386,10 @@
     <!-- //=== Lasted-of ===
     //=== Why-us === -->
     <div class="why-us wrapper">
-        <p class="lasted-of__items-text"> Кто выбирает<span class="sp-color">&nbspПродукты премиального качества</span></p>
+        <p class="lasted-of__items-text"> 
+            <span>Кто выбирает</span>
+            <span class="sp-color">&nbspПродукты премиального качества</span>
+        </p>
 
         <ul class="why-us_list">
             <li>
@@ -437,6 +508,7 @@
     <!-- //=== Why-us ===
     //=== Who-makes === -->
     <div class="who-makes">
+        
 
     </div>
     <!-- //=== Who-makes ===
@@ -461,6 +533,6 @@
     </div>
     <!-- //=== Footer === -->
    </div>
-  
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
