@@ -1,5 +1,28 @@
 //=== Mixins ===
+@mixin poppins_just-text {
+    font-family: Poppins;
+    font-size: 16px;
+    line-height: 24px; 
+    color: #1F1F1F;
+    margin-top: 10px;
+    
+}
 
+@mixin big_tittle {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+}
+
+@mixin lato_tittle {
+    font-family: Lato;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #1F1F1F;
+    // margin-top: 20px;
+}
 //=== Mixins ===
 
 
@@ -32,18 +55,17 @@ $width-max: 1280px;
 
 //=== Header ===
 .delivery{
-display: flex;
-justify-content: center;
-padding: 15px;
-background: #C2E8CE;
-&_text{
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 21px;
-    text-align: center;
-    color: #1F1F1F;
-
-}
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    background: #C2E8CE;
+    &_text{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        text-align: center;
+        color: #1F1F1F;
+    }
 }
 .burger{
     display: none;
@@ -184,6 +206,7 @@ background: #C2E8CE;
     }
     .promo{
         text-align: center;
+        max-width: 1170px;
         &_button{
             align-self: center;
         }
@@ -387,7 +410,39 @@ background: #C2E8CE;
 
 
 //=== Who-makes ===
-
+.who-makes{
+    display: flex;
+    margin-top: 80px;
+    &_text{
+        max-width: 600px;
+        &-title{
+            @include big_tittle;
+        }
+        &-min{
+            margin-top: 40px;
+            @include lato_tittle;
+        }
+        &-list{
+            margin-top: 40px;
+            &-i{
+                list-style-type: none;
+                margin-top: 20px;
+                position: relative;
+            }
+            &-i::before{
+                content: url('/img1p/bullets.png');
+                display: block;
+                position: absolute;
+                left: -35px;
+  
+            }
+        }
+    }
+    &_image{
+        max-width: 570px;
+        max-height: 855px;
+    }
+}
 //=== Who-makes ===
 
 

@@ -199,6 +199,7 @@
   }
   .promo {
     text-align: center;
+    max-width: 1170px;
   }
   .promo_button {
     -ms-flex-item-align: center;
@@ -413,5 +414,54 @@
   font-size: 16px;
   line-height: 24px;
   color: #1F1F1F;
+}
+
+.who-makes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 80px;
+}
+
+.who-makes_text {
+  max-width: 600px;
+}
+
+.who-makes_text-title {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+}
+
+.who-makes_text-min {
+  margin-top: 40px;
+  font-family: Lato;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #1F1F1F;
+}
+
+.who-makes_text-list {
+  margin-top: 40px;
+}
+
+.who-makes_text-list-i {
+  list-style-type: none;
+  margin-top: 20px;
+  position: relative;
+}
+
+.who-makes_text-list-i::before {
+  content: url("/img1p/bullets.png");
+  display: block;
+  position: absolute;
+  left: -35px;
+}
+
+.who-makes_image {
+  max-width: 570px;
+  max-height: 855px;
 }
 /*# sourceMappingURL=style.css.map */
