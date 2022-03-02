@@ -75,6 +75,9 @@ $width-max: 1280px;
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
+    &-main-nav{
+        margin-top: 15px;
+    }
 
     }
 .header-mainnav-list{
@@ -226,18 +229,25 @@ $width-max: 1280px;
 
 //=== Brands ===
 .promo{
-    display: flex;
-    flex-direction: column;
-    height: 500px;
+ 
     background-image: url(/img1p/cheese-promo.jpg);
-    margin-bottom: 80px;
+    background-size: cover;
+    height: 500px;
+    
+    
+    &_content{
+        display: flex;
+        flex-direction: column;
+        
+        margin-bottom: 80px;
+
+    }
     &_title{
         font-family: 'Cormorant', serif;
         font-weight: bold;
         font-size: 50px;
         line-height: 61px;
         color: #F7F5F0;
-        margin-left: 55px;
         margin-top: 135px;
         margin-bottom: 10px;
     }
@@ -246,7 +256,6 @@ $width-max: 1280px;
         font-size: 26px;
         line-height: 39px;
         color: #F7F5F0;
-        margin-left: 55px;
         font-family: 'Poppins', sans-serif;
         margin-bottom: 48px;
 
@@ -258,7 +267,7 @@ $width-max: 1280px;
         top: 445px;
         background: #FF8126;
         border-radius: 5px;
-        margin-left: 61px;
+        margin-left: 5px;
        
     }
 }
@@ -269,6 +278,7 @@ $width-max: 1280px;
 
 
 //=== Lasted-of ===
+
 .lasted-of{
 
     max-height: 412px;
@@ -446,6 +456,45 @@ $width-max: 1280px;
 
 
 //=== Surprice-exotic ===
+.surprice-exotic{
+    margin-top: 565px;
+    display: flex;
+    &_content{
+        margin: 50px 45px;
+       
+    }
+    &_text-title{
+        font-family: Cormorant;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 48px;
+        
+        color: #FF8126;
+        
+        span{
+            color: black;
+
+        }
+        
+    }
+    &_text{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #1F1F1F;
+        margin-bottom: 38px;
+    }
+    .surprice-exotic_btn{
+        background: #FF8126;
+        border-radius: 5px;
+        padding: 10px 31px;
+    }
+  
+
+
+}
 
 //=== Surprice-exotic ===
 

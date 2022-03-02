@@ -52,6 +52,10 @@
   padding: 20px 0;
 }
 
+.header-main-nav {
+  margin-top: 15px;
+}
+
 .header-mainnav-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -208,6 +212,12 @@
 }
 
 .promo {
+  background-image: url(/img1p/cheese-promo.jpg);
+  background-size: cover;
+  height: 500px;
+}
+
+.promo_content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -215,8 +225,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 500px;
-  background-image: url(/img1p/cheese-promo.jpg);
   margin-bottom: 80px;
 }
 
@@ -226,7 +234,6 @@
   font-size: 50px;
   line-height: 61px;
   color: #F7F5F0;
-  margin-left: 55px;
   margin-top: 135px;
   margin-bottom: 10px;
 }
@@ -236,7 +243,6 @@
   font-size: 26px;
   line-height: 39px;
   color: #F7F5F0;
-  margin-left: 55px;
   font-family: 'Poppins', sans-serif;
   margin-bottom: 48px;
 }
@@ -248,7 +254,7 @@
   top: 445px;
   background: #FF8126;
   border-radius: 5px;
-  margin-left: 61px;
+  margin-left: 5px;
 }
 
 .fa-solid {
@@ -462,5 +468,44 @@
 .who-makes_image {
   max-width: 570px;
   max-height: 855px;
+}
+
+.surprice-exotic {
+  margin-top: 565px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.surprice-exotic_content {
+  margin: 50px 45px;
+}
+
+.surprice-exotic_text-title {
+  font-family: Cormorant;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 48px;
+  color: #FF8126;
+}
+
+.surprice-exotic_text-title span {
+  color: black;
+}
+
+.surprice-exotic_text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1F1F1F;
+  margin-bottom: 38px;
+}
+
+.surprice-exotic .surprice-exotic_btn {
+  background: #FF8126;
+  border-radius: 5px;
+  padding: 10px 31px;
 }
 /*# sourceMappingURL=style.css.map */
