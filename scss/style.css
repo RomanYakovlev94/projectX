@@ -215,6 +215,7 @@
   background-image: url(/img1p/cheese-promo.jpg);
   background-size: cover;
   height: 500px;
+  margin-bottom: 80px;
 }
 
 .promo_content {
@@ -262,9 +263,7 @@
 }
 
 .lasted-of {
-  max-height: 412px;
   margin: 80px 0 80px 0;
-  margin: 0 auto;
 }
 
 .lasted-of__items-text {
@@ -471,7 +470,7 @@
 }
 
 .surprice-exotic {
-  margin-top: 565px;
+  margin-top: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -507,5 +506,39 @@
   background: #FF8126;
   border-radius: 5px;
   padding: 10px 31px;
+}
+
+.in-social {
+  margin: 0 auto;
+  margin-top: 80px;
+  max-width: 1280px;
+  height: 260px;
+  background-color: #ff802631;
+  background-image: url(/img1p/maskbglinks.png);
+}
+
+.in-social_text {
+  padding-top: 60px;
+  font-family: Cormorant;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.in-social_links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 20px;
+}
+
+.in-social_links-wa {
+  padding-right: 60px;
 }
 /*# sourceMappingURL=style.css.map */
