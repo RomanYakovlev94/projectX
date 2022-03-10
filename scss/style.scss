@@ -537,3 +537,132 @@ $width-max: 1280px;
 //=== Footer ===
 
 //=== Footer ===
+// === Cart ===
+.cart.active:hover{
+    cursor: pointer;
+    background-color: #BFBFBF;
+
+  
+
+
+}
+.cart.active:hover .cart-content{
+    opacity: 10;
+    visibility: visible;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.cart-content{
+    margin-top: 100px;
+    position: absolute;
+    width: 1180px;
+    right: 370px;
+    top: 80px;
+    background: #BFBFBF;
+   
+    padding: 20px;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s, visibility 0.3s;
+
+    &__btn{
+        display: inline-block;
+        background-color: $color-style;
+        color: #F7F5F0;
+        width: 230px;
+        height: 40px;
+        border-radius: 3px;
+        border-color: rgb(255, 153, 0);
+        text-transform: uppercase;
+        overflow: hidden;
+        position: relative;
+        //margin-left: 20px;
+        //margin-bottom: 20px;
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 1.5em;
+            height: 100%;
+            background-color: rgba(#fff, 0.6);
+            transform: translateX(-4em) skewX(-45deg);
+            transition: 0.5s;
+        }
+        &:hover:before {
+            animation: move-light 0.5s;
+          }
+    }
+      &__product{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+      }
+ 
+       &__bottom{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+       }
+       &__list{
+           list-style-type: none;
+       }
+       &__fullprice{
+           display: flex;
+           align-items: center;
+           gap: 30px;
+       }
+}
+
+input{
+    width: 50px;
+}
+
+.cart-product{
+&__title{
+    width: 400px;
+}
+&__quantity{
+    display: flex;
+
+    align-self: center;
+}
+&__text{
+    display: flex;
+    align-items: center;
+}
+&__img{
+    margin-right: 25px;
+}
+&__price{
+    margin-left: 25px;
+    width: 100px;
+}
+&__delete{
+    align-self: center;
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 100%;
+    padding: 0;
+    background-image: url(/img1p/delcart.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: transparent;
+}
+}
+
+
+
+// === Cart ===
+
+
+// === Catalog ===
+.showcase{
+    display: flex;
+    width: 1180px;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+// === Catalog ===
