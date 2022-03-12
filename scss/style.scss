@@ -296,11 +296,14 @@ $width-max: 1280px;
         &-wr{
             display: flex;
             text-align: center;
+        }
             
     }
 }
+
 .item-card{
-    width: 270px;
+    margin-top: 20px;
+    max-width: 270px;
     height: 332px;
     background-color: #F7F5F0;
     border-radius: 20px;
@@ -311,7 +314,9 @@ $width-max: 1280px;
     &:hover {
         background-color: #e4e2dee7;
     }
-    // &-photo{}
+    &__photo{
+        border-radius: 20px;
+    }
     &__info{
         &-heading{
             font-weight: 500;
@@ -352,7 +357,7 @@ $width-max: 1280px;
         }
     }
 } 
-}
+
 .item-card{
 @keyframes move-light {
     from {
@@ -363,9 +368,6 @@ $width-max: 1280px;
     }
 }
 }
-
-
-
 
 //=== Lasted-of ===
 
@@ -411,9 +413,6 @@ $width-max: 1280px;
         }
     }
     }
-
-
-  
 
 //=== Why-us ===
 
@@ -537,3 +536,17 @@ $width-max: 1280px;
 //=== Footer ===
 
 //=== Footer ===
+
+//=== Cart ===
+.cart{
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 1500px;
+    justify-content: space-around;
+
+}
+.photo-radius{
+    border-radius: 20px;
+}
+//=== Cart ===
